@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Image Carousel</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Finite Carousel</a></li>
+            <li><a href="infintite.html">Infinite Carousel</a></li>
+        </ul>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="images/slide1.jpg" alt="Slider Image">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/slide2.jpg" alt="Slider Image">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/slide3.jpg" alt="Slider Image">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/slide4.jpg" alt="Slider Image">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="images/slide5.jpg" alt="Slider Image">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                <i class="fas fa-angle-right"></i>
+            </button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="footer">A Project by <a href="https://github.com/Bala-Sridhar-S" target="_blank">Bala Sridhar</a> </h3>
+
+    <script src="js/finite.js"></script>
+</body>
+</html>
